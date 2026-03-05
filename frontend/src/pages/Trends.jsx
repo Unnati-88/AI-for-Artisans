@@ -125,6 +125,7 @@ export default function TrendsPage() {
                             </div>
 
                             {/* Trend Card 1 */}
+                            {(activeTab === "All Trends" || activeTab === "Wedding Season") && (
                             <div className="trend-card">
                                 <div className="trend-card-header">
                                     <div className="header-info">
@@ -176,8 +177,10 @@ export default function TrendsPage() {
                                     </div>
                                 </div>
                             </div>
+                            )}
 
                             {/* Trend Card 2 */}
+                            {(activeTab === "All Trends" || activeTab === "Sustainable Dyes") && (
                             <div className="trend-card">
                                 <div className="trend-card-header">
                                     <div className="header-info">
@@ -223,8 +226,10 @@ export default function TrendsPage() {
                                     </div>
                                 </div>
                             </div>
+                            )}
 
                             {/* Trend Card 3 */}
+                            {(activeTab === "All Trends" || activeTab === "Cotton") && (
                             <div className="trend-card">
                                 <div className="trend-card-header">
                                     <div className="header-info">
@@ -273,6 +278,7 @@ export default function TrendsPage() {
                                     </div>
                                 </div>
                             </div>
+                            )}
 
                         </motion.div>
 

@@ -8,6 +8,8 @@ import Constraints from "./pages/Constraints";
 import MyCrafts from "./pages/MyCrafts";
 import ProductionAdvisor from "./pages/ProductionAdvisor";
 import Trends from "./pages/Trends";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 import DashboardLayout from "./components/DashboardLayout";
 
@@ -17,6 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Landing />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
           
           <Route path="home" element={<Home />} />
           <Route path="add-product" element={<AddProduct />} />

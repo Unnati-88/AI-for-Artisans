@@ -50,8 +50,8 @@ export default function LandingPage() {
                     </button>
 
                     {/* CTA */}
-                    <Link to="/home" className="hero-cta-btn desktop-only">
-                        Get Started
+                    <Link to="/login" className="hero-cta-btn desktop-only">
+                        Log in
                     </Link>
                 </header>
 
@@ -69,8 +69,8 @@ export default function LandingPage() {
                                 <a href="#features" onClick={() => setMobileMenuOpen(false)}>Platform</a>
                                 <a href="#steps" onClick={() => setMobileMenuOpen(false)}>Our Impact</a>
                                 <a href="#cta" onClick={() => setMobileMenuOpen(false)}>Partnerships</a>
-                                <Link to="/home" className="mobile-cta-btn" onClick={() => setMobileMenuOpen(false)}>
-                                    Get Started
+                                <Link to="/login" className="mobile-cta-btn" onClick={() => setMobileMenuOpen(false)}>
+                                    Log in
                                 </Link>
                             </nav>
                         </motion.div>
@@ -104,8 +104,8 @@ export default function LandingPage() {
                     </p>
 
                     <div className="hero-buttons">
-                        <Link to="/home" className="hero-btn-primary">
-                            For Partners →
+                        <Link to="/signup" className="hero-btn-primary">
+                            Get Started →
                         </Link>
                         <a href="#features" className="hero-btn-secondary">
                             Learn More
