@@ -70,7 +70,8 @@
 .auth-logo span {
   font-size: 20px;
   font-weight: 700;
-  color: #1A6B3C;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
 }
 
 .auth-title {
@@ -304,7 +305,7 @@
     padding: 32px 24px;
     border-radius: 12px;
   }
-  
+
   .auth-bottom-links {
     flex-direction: column;
     align-items: center;

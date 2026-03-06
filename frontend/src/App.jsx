@@ -10,6 +10,7 @@ import ProductionAdvisor from "./pages/ProductionAdvisor";
 import Trends from "./pages/Trends";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Profile from "./pages/Profile";
 
 import DashboardLayout from "./components/DashboardLayout";
 
@@ -21,13 +22,14 @@ function App() {
           <Route index element={<Landing />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-          
+
           <Route path="home" element={<Home />} />
           <Route path="add-product" element={<AddProduct />} />
           <Route path="constraints" element={<Constraints />} />
           <Route path="my-crafts" element={<MyCrafts />} />
           <Route path="production-advisor" element={<ProductionAdvisor />} />
           <Route path="trends" element={<Trends />} />
+          <Route path="profile" element={<Profile />} />
 
           {/* Fallback route */}
           <Route path="*" element={<div style={{ textAlign: "center", padding: "2rem" }}>Page not found</div>} />

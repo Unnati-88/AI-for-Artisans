@@ -136,7 +136,7 @@ export default function DashboardLayout({ children, headerActions }) {
                         </button>
                     </div>
 
-                    <div className="sidebar-profile-section" style={{ visibility: pathname === '/home' ? 'visible' : 'hidden' }}>
+                    <Link to="/profile" className={`sidebar-profile-section ${pathname === '/profile' ? 'active' : ''}`} style={{ display: pathname === '/home' || pathname === '/profile' ? 'flex' : 'none', textDecoration: 'none', color: 'inherit' }}>
                         <div className="sidebar-profile-img-box">
                             <img src="/images/ramesh_kumar.png" alt="Ramesh Kumar" className="sidebar-profile-img" />
                         </div>
@@ -144,9 +144,7 @@ export default function DashboardLayout({ children, headerActions }) {
                             <p className="sidebar-profile-name">Ramesh Kumar</p>
                             <p className="sidebar-profile-role">Master Weaver</p>
                         </div>
-                    </div>
-
-                    <div className="sidebar-divider" style={{ visibility: pathname === '/home' ? 'visible' : 'hidden' }}></div>
+                    </Link>
 
                     <nav className="sidebar-nav">
                         {navItems.map(({ href, label, Icon }) => {
